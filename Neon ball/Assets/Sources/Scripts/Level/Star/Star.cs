@@ -32,11 +32,12 @@ public class Star : PlayerTrigger, IPause
     private void Update()
     {
         if(!_isPause)
-            transform.Rotate(new Vector3(0,0,10));
+            transform.Rotate(new Vector3(1,1,0));
     }
 
-    private void Collect()
+    private void Collect(PlayerMovement player)
     {
+        player.GetComponent<Animator>().SetTrigger("GetStar");
         OnCollect?.Invoke();
         Destroy(gameObject);
     }

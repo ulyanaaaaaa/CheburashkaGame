@@ -24,7 +24,6 @@ public class LevelProgress : MonoBehaviour
     
     private void Awake()
     {
-        Debug.Log(_saveService.CurrentSaveData);
         _star = Resources.Load<Star>(AssetsPath.LevelPath.Star);
     }
 

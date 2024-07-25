@@ -9,7 +9,7 @@ public class FailTrigger : PlayerTrigger
         PlayerEnter += Fail;
     }
 
-    private void Fail()
+    private void Fail(PlayerMovement playerMovement)
     {
         OnFail?.Invoke();
     }

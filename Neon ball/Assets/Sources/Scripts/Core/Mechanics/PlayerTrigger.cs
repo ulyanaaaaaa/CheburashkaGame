@@ -3,13 +3,13 @@ using UnityEngine;
 
 public class PlayerTrigger : MonoBehaviour
 {
-    public Action PlayerEnter;
+    public Action<PlayerMovement> PlayerEnter;
     public Action PlayerExit;
 
     public void OnTriggerEnter(Collider other)
     {
         if(other.TryGetComponent(out PlayerMovement playerMovement))
-            PlayerEnter?.Invoke();
+            PlayerEnter?.Invoke(playerMovement);
     }
 
     public void OnTriggerExit(Collider other)
