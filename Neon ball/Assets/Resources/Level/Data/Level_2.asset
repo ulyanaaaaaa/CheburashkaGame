@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <Id>k__BackingField: Level_2
   <Scene>k__BackingField:
-    _sceneOB: {fileID: 102900000, guid: 159da5844f3323e4492eb5f6a2072a88, type: 3}
+    _sceneOB: {fileID: 102900000, guid: 1d6a4e3e083529a4a9870551b80e8e24, type: 3}
     _name: Level_2
-    _path: 
-    _buildIndex: -1
+    _path: Assets/Scenes/Level_2.unity
+    _buildIndex: 2
