@@ -4,10 +4,9 @@ using Zenject;
 
 public class TextTranslator : MonoBehaviour
 {   
-    [SerializeField]private Language _language = Language.ru;
+    [SerializeField] private Language _language = Language.ru;
     [Space(15),SerializeField] private TextMeshProUGUI _textMesh;
     [SerializeField] private string _id;
-    private string _ids;
     private string _result;
     private TranslateService _translator;
 
